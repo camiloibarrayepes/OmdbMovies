@@ -42,6 +42,7 @@
 		8E678CDE2CFF5E0D00906F4D /* MovieGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E678CDD2CFF5E0D00906F4D /* MovieGridView.swift */; };
 		8E678CE02CFF5E3800906F4D /* SingleMovieGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E678CDF2CFF5E3800906F4D /* SingleMovieGridView.swift */; };
 		8E678CE22CFF5EC700906F4D /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E678CE12CFF5EC700906F4D /* CustomImageView.swift */; };
+		8E678CE42CFF635E00906F4D /* APIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E678CE32CFF635E00906F4D /* APIClientProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		8E678CDD2CFF5E0D00906F4D /* MovieGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridView.swift; sourceTree = "<group>"; };
 		8E678CDF2CFF5E3800906F4D /* SingleMovieGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleMovieGridView.swift; sourceTree = "<group>"; };
 		8E678CE12CFF5EC700906F4D /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		8E678CE32CFF635E00906F4D /* APIClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 		8E4BE6622CFE60F000C0B5B4 /* networking */ = {
 			isa = PBXGroup;
 			children = (
+				8E678CE52CFF636A00906F4D /* protocol */,
 				8E4BE6692CFE6A5200C0B5B4 /* APIClient.swift */,
 				8E4BE66B2CFE6A7100C0B5B4 /* MovieAPI.swift */,
 			);
@@ -268,9 +271,9 @@
 		8E4BE67B2CFEA6A500C0B5B4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				8E678CE62CFF63F300906F4D /* DDBB */,
 				8E678CBB2CFEDC6700906F4D /* Modifiers */,
 				8E678CC42CFEECA300906F4D /* CacheManager.swift */,
-				8E678CCB2CFEF1C600906F4D /* DataBase.swift */,
 				8E678CE12CFF5EC700906F4D /* CustomImageView.swift */,
 			);
 			path = Helpers;
@@ -314,6 +317,22 @@
 				8E678CD72CFF518100906F4D /* HeaderDetailView.swift */,
 			);
 			path = SubViews;
+			sourceTree = "<group>";
+		};
+		8E678CE52CFF636A00906F4D /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				8E678CE32CFF635E00906F4D /* APIClientProtocol.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		8E678CE62CFF63F300906F4D /* DDBB */ = {
+			isa = PBXGroup;
+			children = (
+				8E678CCB2CFEF1C600906F4D /* DataBase.swift */,
+			);
+			path = DDBB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,6 +488,7 @@
 				8E678CBF2CFEDCE300906F4D /* RoundedCorner.swift in Sources */,
 				8E678CBD2CFEDC7900906F4D /* DescriptionVStackModifier.swift in Sources */,
 				8E678CAF2CFEC7F300906F4D /* PickerHeader.swift in Sources */,
+				8E678CE42CFF635E00906F4D /* APIClientProtocol.swift in Sources */,
 				8E678CB62CFECC9300906F4D /* SearchBarView.swift in Sources */,
 				8E678CC12CFEDECD00906F4D /* DetailViewModel.swift in Sources */,
 				8E678CB82CFED1C400906F4D /* ContentTypeView.swift in Sources */,

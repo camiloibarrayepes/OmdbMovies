@@ -14,7 +14,7 @@ enum APIClientError: Error {
     case unknown
 }
 
-struct APIClient {
+struct APIClient: APIClientProtocol {
     private let apiKey = "6d431f35"
     private let baseURL = "http://www.omdbapi.com/"
     

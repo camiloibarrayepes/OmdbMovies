@@ -9,7 +9,11 @@ import Foundation
 import Combine
 
 struct MovieAPI {
-    private let apiClient = APIClient()
+    private let apiClient: APIClientProtocol
+    
+    init(apiClient: APIClientProtocol = APIClient()) {
+        self.apiClient = apiClient
+    }
 
     func searchMovies(query: String, page: Int) -> AnyPublisher<MovieResponse, APIClientError> {
         return apiClient.search(query: query, page: page, responseType: MovieResponse.self)
