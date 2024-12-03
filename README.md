@@ -25,8 +25,8 @@ Movie App is an iOS application developed with SwiftUI and follows the MVVM (Mod
 ## App Icon
 
 The app icon was generated with AI. You can view it below:
+<img src="[https://your-image-url.type](https://i.ibb.co/wsVyYvy/Screenshot-2024-12-03-at-10-54-34.png)" width="100" height="100">
 
-![App Icon](https://i.ibb.co/wsVyYvy/Screenshot-2024-12-03-at-10-54-34.png)
 
 ## Requirements
 
