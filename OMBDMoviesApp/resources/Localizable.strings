@@ -1,0 +1,13 @@
+//
+//  Localizable.swift
+//  OMBDMoviesApp
+//
+//  Created by Camilo Ibarra yepes on 3/12/24.
+//
+
+"APP_TITLE" = "Movies";
+"SEARCH_A_MOVIE_BY_NAME" = "Busca una película por su nombre";
+"SEARCH_MOVIE_PLACEHOLDER" = "Search Movies";
+"NO_DESCRIPTION" = "No description...";
+"YEAR" = "Year";
+"RATING" = "Rating";

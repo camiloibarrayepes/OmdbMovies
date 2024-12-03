@@ -37,6 +37,8 @@
 		8E678CD42CFF511A00906F4D /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E678CD32CFF511A00906F4D /* DescriptionView.swift */; };
 		8E678CD62CFF515800906F4D /* MoviePosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E678CD52CFF515800906F4D /* MoviePosterView.swift */; };
 		8E678CD82CFF518100906F4D /* HeaderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E678CD72CFF518100906F4D /* HeaderDetailView.swift */; };
+		8E678CDA2CFF53F100906F4D /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 8E678CD92CFF53F100906F4D /* Localizable.strings */; };
+		8E678CDC2CFF543900906F4D /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E678CDB2CFF543900906F4D /* Localizable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		8E678CD32CFF511A00906F4D /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
 		8E678CD52CFF515800906F4D /* MoviePosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterView.swift; sourceTree = "<group>"; };
 		8E678CD72CFF518100906F4D /* HeaderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDetailView.swift; sourceTree = "<group>"; };
+		8E678CD92CFF53F100906F4D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		8E678CDB2CFF543900906F4D /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +244,8 @@
 			isa = PBXGroup;
 			children = (
 				8E4BE63A2CFE60A100C0B5B4 /* Assets.xcassets */,
+				8E678CD92CFF53F100906F4D /* Localizable.strings */,
+				8E678CDB2CFF543900906F4D /* Localizable.swift */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -444,6 +450,7 @@
 				8E4BE6762CFE74E400C0B5B4 /* MovieViewModel.swift in Sources */,
 				8E678CCC2CFEF1C600906F4D /* DataBase.swift in Sources */,
 				8E4BE6372CFE609D00C0B5B4 /* OMBDMoviesApp.swift in Sources */,
+				8E678CDA2CFF53F100906F4D /* Localizable.strings in Sources */,
 				8E678CD42CFF511A00906F4D /* DescriptionView.swift in Sources */,
 				8E678CD82CFF518100906F4D /* HeaderDetailView.swift in Sources */,
 				8E678CB42CFECC4700906F4D /* LoadingView.swift in Sources */,
@@ -460,6 +467,7 @@
 				8E4BE66A2CFE6A5200C0B5B4 /* APIClient.swift in Sources */,
 				8E4BE66C2CFE6A7100C0B5B4 /* MovieAPI.swift in Sources */,
 				8E678CD62CFF515800906F4D /* MoviePosterView.swift in Sources */,
+				8E678CDC2CFF543900906F4D /* Localizable.swift in Sources */,
 				8E678CC52CFEECA400906F4D /* CacheManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

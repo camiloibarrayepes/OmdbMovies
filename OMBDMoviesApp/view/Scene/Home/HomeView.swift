@@ -46,7 +46,7 @@ struct HomeView: View {
                     )
                 }
             }
-            .navigationTitle("Movies")
+            .navigationTitle(Localizable.movieTitle)
             .navigationBarItems(trailing:
                 Button(action: toggleDarkMode) {
                     Image(systemName: colorScheme == .dark ? "sun.max.fill" : "moon.fill")
@@ -88,7 +88,7 @@ extension HomeView {
     
     var emptyView: some View {
         VStack {
-            Text("Busca una película por su nombre")
+            Text(Localizable.searchMovieByName)
                 .font(.headline)
                 .foregroundColor(.gray)
                 .padding()

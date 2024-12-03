@@ -12,7 +12,7 @@ struct SearchBarView: View {
 
     var body: some View {
         HStack {
-            TextField("Search Movies", text: $text)
+            TextField(Localizable.searchMoviePlaceHolder, text: $text)
                 .autocorrectionDisabled(true)
                 .autocapitalization(.none)
                 .padding(7)
