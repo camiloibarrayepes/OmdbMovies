@@ -16,17 +16,11 @@ struct SingleMovieView: View {
 
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
-            KFImage(URL(string: singleMovie.poster ?? ""))
-                .placeholder {
-                    Image("placeholdermovie")
-                        .resizable()
-                        .scaledToFit()
-                }
-                .resizable()
-                .scaledToFill()
-                .frame(width: 100, height: 150)
-                .cornerRadius(8)
-                .shadow(color: Color.black.opacity(0.2), radius: 4, x: 0, y: 2)
+            CustomImageView(
+                imageURL: singleMovie.poster ?? "",
+                width: 100,
+                height: 150
+            )
             VStack(alignment: .leading){
                 HStack{
                     Text(singleMovie.title ?? "")

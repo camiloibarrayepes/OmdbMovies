@@ -12,6 +12,7 @@ struct HomeView: View {
     @State private var selectedOption = "All"
     @Environment(\.colorScheme) var colorScheme
     @Environment(\.presentationMode) var presentationMode
+    @State private var isGridView = false
 
     var body: some View {
         NavigationView {
@@ -39,22 +40,40 @@ struct HomeView: View {
                 if viewModel.searchText.isEmpty {
                     emptyView
                 } else {
-                    MovieListView(
-                        movies: viewModel.movies,
-                        selectedOption: $selectedOption,
-                        viewModel: viewModel
-                    )
+                    // Select Grid of List View
+                    if isGridView {
+                        MovieGridView(
+                            movies: viewModel.movies,
+                            selectedOption: $selectedOption,
+                            viewModel: viewModel
+                        )
+                    } else {
+                        MovieListView(
+                            movies: viewModel.movies,
+                            selectedOption: $selectedOption,
+                            viewModel: viewModel
+                        )
+                    }
                 }
             }
             .navigationTitle(Localizable.movieTitle)
-            .navigationBarItems(trailing:
+            .navigationBarItems(trailing: HStack {
                 Button(action: toggleDarkMode) {
                     Image(systemName: colorScheme == .dark ? "sun.max.fill" : "moon.fill")
                         .imageScale(.large)
                         .foregroundColor(colorScheme == .dark ? .yellow : .black)
                 }
-            )
+                Button(action: toggleGridView) {
+                    Image(systemName: isGridView ? "list.bullet" : "square.grid.2x2.fill")
+                        .imageScale(.large)
+                        .foregroundColor(colorScheme == .dark ? .yellow : .black)
+                }
+            })
         }
+    }
+    
+    private func toggleGridView() {
+        isGridView.toggle()
     }
     
     private func toggleDarkMode() {
@@ -70,7 +89,6 @@ struct HomeView: View {
     }
 
 }
-
 
 extension HomeView {
     var errorMessageView: some View {
