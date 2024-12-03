@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct SingleMovieView: View {
     
@@ -15,7 +16,13 @@ struct SingleMovieView: View {
 
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
-            AsyncImageView(url: singleMovie.poster)
+            KFImage(URL(string: singleMovie.poster ?? ""))
+                .placeholder {
+                    Image("placeholdermovie")
+                        .resizable()
+                        .scaledToFit()
+                }
+                .resizable()
                 .scaledToFill()
                 .frame(width: 100, height: 150)
                 .cornerRadius(8)

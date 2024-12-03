@@ -30,8 +30,8 @@ struct MovieListView: View {
             }, id: \.self) { movie in
                 NavigationLink {
                     DetailedView(
-                        idMovie: movie.id ?? "",
-                        viewModel: detailViewModel,
+                        viewModel: detailViewModel, 
+                        moviePassObject: movie,
                         database: database
                     )
                 } label: {
