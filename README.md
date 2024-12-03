@@ -22,10 +22,26 @@ Movie App is an iOS application developed with SwiftUI and follows the MVVM (Mod
 
 - **Dark Mode Support**: The app is fully compatible with iOS Dark Mode, adjusting the UI colors automatically based on user preferences.
 
+- **Grid or List View**: The app provides an option to view movies in either a **Grid** or a **List** layout, allowing the user to choose the presentation style that best suits their preference.
+
+## Mobile Screenshots
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://i.ibb.co/Rh0YDVV/Simulator-Screenshot-i-Phone-15-Pro-2024-12-03-at-10-47-44.png" width="300" />
+  <img src="https://i.ibb.co/tqdgTRN/Simulator-Screenshot-i-Phone-15-Pro-2024-12-03-at-10-56-40.png" width="300" />
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://i.postimg.cc/2SW-DKmWS/Simulator-Screenshot-i-Phone-15-Pro-2024-12-03-at-10-47-33.png" width="300" />
+  <img src="https://i.postimg.cc/pdtHN7QY/Simulator-Screenshot-i-Phone-15-Pro-2024-12-03-at-10-56-49.png" width="300" />
+</div>
+
+
 ## App Icon
 
 The app icon was generated with AI. You can view it below:
-<img src="[https://your-image-url.type](https://i.ibb.co/wsVyYvy/Screenshot-2024-12-03-at-10-54-34.png)" width="100" height="100">
+
+<img src="https://i.ibb.co/pzDfmQN/Screenshot-2024-12-03-at-10-54-34.png" width="100" height="100" />
+
 
 
 ## Requirements
